@@ -78,9 +78,11 @@ const customers = [
 
 const data = fs.readFileSync('db.json');
 let jsonData = JSON.parse(data);
+let id = 1;
 
 customers.forEach((customer) => {
   jsonData.customers.push({
+    id: id,
     name: customer,
     endDate: '2023-01-01',
     previousBalance: 500,
@@ -93,6 +95,8 @@ customers.forEach((customer) => {
   });
 
   jsonData = { ...jsonData, [customer]: {} };
+
+  id++;
 });
 
 fs.writeFileSync('db.json', JSON.stringify(jsonData));
