@@ -1,1 +1,32 @@
-{}
+{
+  "customers": [
+    {
+      "AK": {
+        "endDate": "2023-01-01",
+        "previousBalance": 500,
+        "advance": 0,
+        "vegPrice": 50,
+        "eggPrice": 70,
+        "chickenPrice": 80,
+        "fishPrice": 80,
+        "muttonPrice": 120
+      }
+    }
+  ],
+  "AK": [
+    {
+      "0": {
+        "1a": {
+          "vegPlates": 1,
+          "chickenPlates": 0,
+          "fishPlates": 0,
+          "muttonPlates": 0,
+          "eggPlates": 0,
+          "extraItemPrice": 0,
+          "notes": null,
+          "totalPrice": 50
+        }
+      }
+    }
+  ]
+}
